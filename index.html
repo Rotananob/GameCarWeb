@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ហ្គេមប្រណាំងឡាន - គាំទ្រទាំងទូរស័ព្ទ និងកុំព្យូទ័រ</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div class="container">
+        <h1>ហ្គេមប្រណាំងឡាន</h1>
+        <p class="subtitle">គាំទ្រទាំងទូរស័ព្ទ និងកុំព្យូទ័រ</p>
+        
+        <div class="game-info">
+            <div class="info-box">
+                <h3>ពិន្ទុ</h3>
+                <div id="score">0</div>
+            </div>
+            <div class="info-box">
+                <h3>ជីវិត</h3>
+                <div id="lives">3</div>
+            </div>
+            <div class="info-box">
+                <h3>កម្រិត</h3>
+                <div id="level">1</div>
+            </div>
+            <div class="info-box">
+                <h3>ល្បឿន</h3>
+                <div id="speed">5</div>
+            </div>
+        </div>
+        
+        <div class="power-indicator" id="powerIndicator">
+            ថាមពល: <span id="powerTimer">0</span>s
+        </div>
+        
+        <div class="game-container">
+            <div class="road">
+                <div class="player-car" id="player"></div>
+            </div>
+            
+            <div class="game-over" id="gameOver">
+                <h2>ហ្គេមចប់!</h2>
+                <div class="score-display">ពិន្ទុរបស់អ្នក: <span id="finalScore">0</span></div>
+                <button id="restartBtn">លេងម្តងទៀត</button>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="startBtn">ចាប់ផ្តើម</button>
+            <button id="pauseBtn" disabled>ផ្អាក</button>
+            <button id="powerBtn" disabled>ប្រើថាមពល (ម៉ៅស្ដាំ)</button>
+        </div>
+        
+        <div class="mobile-controls">
+            <div class="mobile-controls-grid">
+                <div class="mobile-btn mobile-btn-up" id="mobileUp">↑</div>
+                <div class="mobile-btn mobile-btn-left" id="mobileLeft">←</div>
+                <div class="mobile-btn mobile-btn-down" id="mobileDown">↓</div>
+                <div class="mobile-btn mobile-btn-right" id="mobileRight">→</div>
+                <div class="mobile-btn mobile-btn-action" id="mobileAction">ប្រើថាមពល</div>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <h3>ការណែនាំ</h3>
+            <ul>
+                <li><strong>កុំព្យូទ័រ:</strong> ប្រើ A, W, S, D ឬព្រួញដើម្បីធ្វើចលនា</li>
+                <li><strong>កុំព្យូទ័រ:</strong> ចុចម៉ៅស្ដាំដើម្បីប្រើថាមពល</li>
+                <li><strong>ទូរស័ព្ទ:</strong> ប្រើប៊ូតុងនៅក្រោមដើម្បីធ្វើចលនា</li>
+                <li>ចៀសវាងឡានពីក្រោយដើម្បីមិនអោយប៉ះ</li>
+                <li>ប្រមូលពិន្ទុដោយចៀសវាងឡានគេបានយូរ</li>
+                <li>ប្រមូលថាមពលដើម្បីទទួលបានល្បឿន</li>
+                <li>អ្នកមានជីវិត ៣ ដងតែប៉ុណ្ណោះ</li>
+            </ul>
+        </div>
+    </div>
+<script src="script.js"></script>
+  
+</body>
+</html>
